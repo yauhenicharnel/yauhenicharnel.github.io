@@ -71,29 +71,27 @@
     .stats {
       display: flex;
       justify-content: center;
-      gap: 0;
       background: white;
       border-bottom: 1px solid #e8f0e8;
     }
 
     .stat {
       flex: 1;
-      max-width: 180px;
       text-align: center;
-      padding: 20px 12px;
+      padding: 18px 8px;
       border-right: 1px solid #e8f0e8;
     }
 
     .stat:last-child { border-right: none; }
 
     .stat-number {
-      font-size: 1.6rem;
+      font-size: 1.5rem;
       font-weight: 800;
       color: #2d6a4f;
     }
 
     .stat-label {
-      font-size: 0.78rem;
+      font-size: 0.7rem;
       color: #6b7b6b;
       margin-top: 2px;
       text-transform: uppercase;
@@ -150,8 +148,8 @@
 
     .features-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 20px;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 16px;
       max-width: 900px;
       margin: 0 auto;
     }
@@ -159,24 +157,28 @@
     .feature-card {
       background: #f5f7f5;
       border-radius: 20px;
-      padding: 28px 20px;
+      padding: 20px 18px;
       text-align: left;
+      display: flex;
+      align-items: flex-start;
+      gap: 14px;
     }
 
     .feature-icon {
-      font-size: 2rem;
-      margin-bottom: 12px;
+      font-size: 1.8rem;
+      flex-shrink: 0;
+      margin-top: 2px;
     }
 
     .feature-card h3 {
-      font-size: 1.05rem;
+      font-size: 1rem;
       font-weight: 700;
-      margin-bottom: 6px;
+      margin-bottom: 4px;
       color: #1a2e1a;
     }
 
     .feature-card p {
-      font-size: 0.88rem;
+      font-size: 0.85rem;
       color: #5a6b5a;
       line-height: 1.5;
     }
@@ -221,8 +223,7 @@
     @media (max-width: 600px) {
       .hero h1 { font-size: 2rem; }
       .screenshots img { width: 155px; }
-      .stats { flex-wrap: wrap; }
-      .stat { min-width: 50%; border-right: none; border-bottom: 1px solid #e8f0e8; }
+      .features-grid { grid-template-columns: 1fr; }
     }
   </style>
 </head>
@@ -327,7 +328,7 @@
   <footer>
     <p>
       <a href="privacy.html">Privacy Policy</a>
-      <a href="mailto:support@yauhenicharnel.github.io">Support</a>
+      <a href="mailto:yauhenicharnel@gmail.com">Support</a>
     </p>
     <p style="margin-top: 12px;">© 2026 Yauheni Charnel</p>
   </footer>
